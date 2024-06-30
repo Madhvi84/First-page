@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player</title>
+	<style>
+		/* Add some basic styling to position the player */
+		.audio-player {
+			position: fixed;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: #333;
+			color: #fff;
+			padding: 1em;
+			border-radius: 1em;
+		}
+	</style>
+</head>
+<body>
+	<!-- The music player -->
+	<div class="audio-player">
+		<audio id="audio-player" src="music-file.mp3" controls>
+			Your browser does not support the audio element.
+		</audio>
+	</div>
+	
+	<!-- Optional: Add some controls -->
+	<script>
+		const audioPlayer = document.getElementById('audio-player');
+		
+		// Play/pause button
+		document.getElementById('play-pause-btn').addEventListener('click', () => {
+			if (audioPlayer.paused) {
+				audioPlayer.play();
+			} else {
+				audioPlayer.pause();
+			}
+		});
+		
+		// Volume control
+		document.getElementById('volume-slider').addEventListener('input', (e) => {
+			audioPlayer.volume = e.target.value / 100;
+		});
+	</script>
+</body>
+</html>

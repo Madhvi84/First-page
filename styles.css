@@ -1,0 +1,20 @@
+body {
+  background-color: #7148FC;
+}
+
+
+.playwrite-es-deco
+ {
+  font-family: "Playwrite ES Deco", cursive;
+  font-optical-sizing: auto;
+  font-weight: <400>;
+  font-style: normal;
+}
+h1{
+  color: #B8BFC6;
+  font-family: "Playwrite ES Deco", cursive;
+}
+
+.gg{
+  color: #B8BFC6;
+}
